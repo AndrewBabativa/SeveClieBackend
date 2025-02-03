@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>47469f43-d70d-44cf-a588-ee2a22333d7a</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="MediatR" Version="12.4.1" />
+	  <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.1" />
+	  <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.1" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.1">
+	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	    <PrivateAssets>all</PrivateAssets>
+	  </PackageReference>
+	  <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
+	  <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="7.2.0" />
+	  <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="7.2.0" />
+	  <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="7.2.0" />
+	  <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.3.1" />
+	</ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SeveClie.Application\SeveClie.Application.csproj" />
+  </ItemGroup>
+
+</Project>
